@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+
+    <header>
+            <nav>
+                <div class="nav-wrapper ">
+                    <i class="fa" ></i>
+                    <a href="/" >Friend Finder Home</a>
+                    <ul class="right " id="head-nav-links">
+                            <li><a href="/home"></a></li>
+        
+                            
+                        </ul>
+    
+                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+<!-- Link to the jQuery Library -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 ">
+					<div id="mainpanel-content">
+						<h1>Survey Questions</h1>
+						<div class="divider"></div>
+
+						<h3>Your Stuffs is Here!</h3>
+
+						<div class="input-field col s6">
+							<h5>Name</h5>
+							<i class="stuff"></i>
+							<input type="text" class="validate" placeholder="Your Name Here" id="userName">
+						</div>
+
+			
+                        <div class="input-field col s12">
+                            <h3>Question 1</h3>
+                            <h5>If you knew you'd die tomorrow, how would you spend your last day?</h5>
+                            <select id="question1">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Learning as much about the world as possible
+                                </option>
+                                <option value="2">Having as much fun as possible</option>
+                                <option value="3">Fulfilling a lifelong dream</option>
+                                <option value="4"> Crying a lot probably</option>
+                                <option value="5">Spending time with loved ones</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                                <h3>Question 2</h3>
+                                <h5>You have to write a research paper, what's your strategy?</h5>
+                                <select id="question1">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Start right away, this could be interesting!  
+                                    </option>
+                                    <option value="2">Blow it off for a few days.</option>
+                                    <option value="3">Figure out what the teacher is looking for so you can impress him.</option>
+                                    <option value="4">  Whine and complain...you hate papers!</option>
+                                    <option value="5">I'll probably finish it pretty fast, I don't have much planned.</option>
+                                </select>
+                            </div>
+
+						<div class="input-field col s12">
+							<h3>Question 3</h3>
+							<h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+							<select id="question3">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+							<h3>Question 4</h3>
+							<h5>You rarely do something just out of sheer curiosity.</h5>
+							<select id="question4">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+							<h3>Question 5</h3>
+							<h5>You consider yourself more practical than creative.</h5>
+							<select id="question5">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+							<h3>Question 6</h3>
+							<h5>You feel superior to other people.</h5>
+							<select id="question6">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+							<h3>Question 7</h3>
+							<h5>You are usually highly motivated and energetic.</h5>
+							<select id="question7">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+							<h3>Question 8</h3>
+							<h5>You often get so lost in thoughts that you ignore or forget your surroundings.</h5>
+							<select id="question8">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+							<h3>Question 9</h3>
+							<h5>YYou try to respond to your e-mails as soon as possible and cannot stand a messy inbox.</h5>
+							<select id="question9">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+							<h3>Question 10</h3>
+							<h5>You do not usually initiate conversations</h5>
+							<select id="question10">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div>
+							<button class="btn" type="submit" name="action" id="submitButton">Submit Responses
+								<i class="stuff"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+			
+					<p class="grey-text">Thank you for taking theFriends Quiz.</p>
+				</div>
+				<div class="col l4 ">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text" href="/data/friends">Friends List</a></li>
+						<li><a class="grey-text">Link to repo</a> 
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Your Match</h4>
+			<div class="divider"></div>
+			<h5 id="userMatch"></h5>
+			<div class="stuff" ></div>
+		</div>
+		<div class="modal-footer">
+			<a href="/survey" class="modal-action modal-close "> Again!</a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('select').stuff_select();
+			$('.modal').modal({
+			});
+		});
+        
+        
+		$('#submitButton').on('click', function(event) {
+			event.preventDefault();
+			var userInput = {
+				name: $('#userName').val().trim(),
+				scores:[
+					$('#question1').val().trim(),
+					$('#question2').val().trim(),
+					$('#question3').val().trim(),
+					$('#question4').val().trim(),
+					$('#question5').val().trim(),
+					$('#question6').val().trim(),
+					$('#question7').val().trim(),
+					$('#question8').val().trim(),
+					$('#question9').val().trim(),
+					$('#question10').val().trim()
+				]
+			};
+			// console.log('userInput = ' + JSON.stringify(userInput));
+		
+			$.post('/data/friends', userInput)
+      		.done(function(data) {
+      			// console.log('response = ' + JSON.stringify(data));
+              
+                  
+      			$('#userMatch').html(data.matchName);
+      			$('#modal1').modal('open');
+      		});
+		});
+	</script>
+</body>
+</html>
