@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home Page</title>
-
+	<title>Home Page</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Your Match</h4>
+			<div class="divider"></div>
+			<h5 id="userMatch"></h5>
+			<div class="stuff" ></div>
+		</div>
+		<div class="modal-footer">
+			<a href="/survey" class="modal-action modal-close "> Again!</a>
+		</div>
+	</div>
     <header>
             <nav>
                 <div class="nav-wrapper ">
@@ -22,15 +36,6 @@
                 </div>
             </nav>
         </header>
-
-<!-- Link to the jQuery Library -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
 
 
 	<main>
@@ -67,7 +72,7 @@
                         <div class="input-field col s12">
                                 <h3>Question 2</h3>
                                 <h5>You have to write a research paper, what's your strategy?</h5>
-                                <select id="question1">
+                                <select id="question2">
                                     <option value="" disabled selected>Choose your option</option>
                                     <option value="1">Start right away, this could be interesting!  
                                     </option>
@@ -210,26 +215,11 @@
 			</div>
 		</div>
 		
-	<div id="modal1" class="modal">
-		<div class="modal-content">
-			<h4>Your Match</h4>
-			<div class="divider"></div>
-			<h5 id="userMatch"></h5>
-			<div class="stuff" ></div>
-		</div>
-		<div class="modal-footer">
-			<a href="/survey" class="modal-action modal-close "> Again!</a>
-		</div>
-	</div>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('select').stuff_select();
-			$('.modal').modal({
-			});
-		});
-        
-        
 		$('#submitButton').on('click', function(event) {
 			event.preventDefault();
 			var userInput = {
@@ -249,11 +239,9 @@
 			};
 			// console.log('userInput = ' + JSON.stringify(userInput));
 		
-			$.post('/data/friends', userInput)
+			$.post('/api/friends', userInput)
       		.done(function(data) {
-      			// console.log('response = ' + JSON.stringify(data));
-              
-                  
+      			// console.log('response = ' + JSON.stringify(data));                  
       			$('#userMatch').html(data.matchName);
       			$('#modal1').modal('open');
       		});

@@ -22,7 +22,7 @@ module.exports = function(app) {
 		// console.log('userResponses = ' + userResponses);
 		var matchName = '';
 		
-		//var totalDifference = 10000; // Make the initial value big for comparison
+		var totalDifference = 10000; // Make the initial value big for comparison
 
 		// Examine all existing friends in the list
 		for (var i = 0; i < friends.length; i++) {
@@ -38,7 +38,6 @@ module.exports = function(app) {
 			// If lowest difference, record the friend match
 			if (diff < totalDifference) {
 				// console.log('Closest match found = ' + diff);
-			;
 
 				totalDifference = diff;
 				matchName = friends[i].name;
