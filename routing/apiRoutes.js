@@ -16,10 +16,10 @@ module.exports = function(app) {
 
 
 		var userInput = req.body;
-		// console.log('userInput = ' + JSON.stringify(userInput));
+		console.log('userInput = ' + JSON.stringify(userInput));
 
 		var userResponses = userInput.scores;
-		// console.log('userResponses = ' + userResponses);
+		console.log('userResponses = ' + userResponses);
 		var matchName = '';
 		
 		var totalDifference = 10000; // Make the initial value big for comparison

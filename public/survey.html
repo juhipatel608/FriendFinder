@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Home Page</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Compiled and minified Materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+	<!-- Compiled and minified Materialize JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+
 </head>
+
 <body>
-<div id="modal1" class="modal">
-		<div class="modal-content">
-			<h4>Your Match</h4>
-			<div class="divider"></div>
-			<h5 id="userMatch"></h5>
-			<div class="stuff" ></div>
-		</div>
-		<div class="modal-footer">
-			<a href="/survey" class="modal-action modal-close "> Again!</a>
-		</div>
-	</div>
-    <header>
-            <nav>
-                <div class="nav-wrapper ">
-                    <i class="fa" ></i>
-                    <a href="/" >Friend Finder Home</a>
-                    <ul class="right " id="head-nav-links">
-                            <li><a href="/home"></a></li>
-        
-                            
-                        </ul>
-    
-                        
-                    </ul>
-                </div>
-            </nav>
-        </header>
+
+	<header>
+		<nav>
+			<div class="nav-wrapper ">
+				<i class="fa"></i>
+				<a href="/">Friend Finder Home</a>
+				<ul class="right " id="head-nav-links">
+					<li>
+						<a href="/home"></a>
+					</li>
+				</ul>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
 
 	<main>
@@ -54,34 +55,34 @@
 							<input type="text" class="validate" placeholder="Your Name Here" id="userName">
 						</div>
 
-			
-                        <div class="input-field col s12">
-                            <h3>Question 1</h3>
-                            <h5>If you knew you'd die tomorrow, how would you spend your last day?</h5>
-                            <select id="question1">
-                                <option value="" disabled selected>Choose your option</option>
-                                <option value="1">Learning as much about the world as possible
-                                </option>
-                                <option value="2">Having as much fun as possible</option>
-                                <option value="3">Fulfilling a lifelong dream</option>
-                                <option value="4"> Crying a lot probably</option>
-                                <option value="5">Spending time with loved ones</option>
-                            </select>
-                        </div>
 
-                        <div class="input-field col s12">
-                                <h3>Question 2</h3>
-                                <h5>You have to write a research paper, what's your strategy?</h5>
-                                <select id="question2">
-                                    <option value="" disabled selected>Choose your option</option>
-                                    <option value="1">Start right away, this could be interesting!  
-                                    </option>
-                                    <option value="2">Blow it off for a few days.</option>
-                                    <option value="3">Figure out what the teacher is looking for so you can impress him.</option>
-                                    <option value="4">  Whine and complain...you hate papers!</option>
-                                    <option value="5">I'll probably finish it pretty fast, I don't have much planned.</option>
-                                </select>
-                            </div>
+						<div class="input-field col s12">
+							<h3>Question 1</h3>
+							<h5>If you knew you'd die tomorrow, how would you spend your last day?</h5>
+							<select id="question1">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">Learning as much about the world as possible
+								</option>
+								<option value="2">Having as much fun as possible</option>
+								<option value="3">Fulfilling a lifelong dream</option>
+								<option value="4"> Crying a lot probably</option>
+								<option value="5">Spending time with loved ones</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+							<h3>Question 2</h3>
+							<h5>You have to write a research paper, what's your strategy?</h5>
+							<select id="question2">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">Start right away, this could be interesting!
+								</option>
+								<option value="2">Blow it off for a few days.</option>
+								<option value="3">Figure out what the teacher is looking for so you can impress him.</option>
+								<option value="4"> Whine and complain...you hate papers!</option>
+								<option value="5">I'll probably finish it pretty fast, I don't have much planned.</option>
+							</select>
+						</div>
 
 						<div class="input-field col s12">
 							<h3>Question 3</h3>
@@ -198,54 +199,87 @@
 		</div>
 	</main>
 
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Your Match</h4>
+			<div class="divider"></div>
+			<h5 id="userMatch"></h5>
+			<div class="stuff"></div>
+		</div>
+		<div class="modal-footer">
+			<a href="/survey" class="modal-action modal-close "> Again!</a>
+		</div>
+	</div>
+
 	<footer class="page-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col l6 s12">
-			
+
 					<p class="grey-text">Thank you for taking theFriends Quiz.</p>
 				</div>
 				<div class="col l4 ">
 					<h5 class="white-text">Links</h5>
 					<ul>
-						<li><a class="grey-text" href="/data/friends">Friends List</a></li>
-						<li><a class="grey-text">Link to repo</a> 
+						<li>
+							<a class="grey-text" href="/data/friends">Friends List</a>
+						</li>
+
 					</ul>
 				</div>
 			</div>
 		</div>
-		
-	
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<script type="text/javascript">
-		$('#submitButton').on('click', function(event) {
-			event.preventDefault();
-			var userInput = {
-				name: $('#userName').val().trim(),
-				scores:[
-					$('#question1').val().trim(),
-					$('#question2').val().trim(),
-					$('#question3').val().trim(),
-					$('#question4').val().trim(),
-					$('#question5').val().trim(),
-					$('#question6').val().trim(),
-					$('#question7').val().trim(),
-					$('#question8').val().trim(),
-					$('#question9').val().trim(),
-					$('#question10').val().trim()
-				]
-			};
-			// console.log('userInput = ' + JSON.stringify(userInput));
-		
-			$.post('/api/friends', userInput)
-      		.done(function(data) {
-      			// console.log('response = ' + JSON.stringify(data));                  
-      			$('#userMatch').html(data.matchName);
-      			$('#modal1').modal('open');
-      		});
-		});
-	</script>
+		<script type="text/javascript">
+			$('#submitButton').on('click', function (event) {
+				event.preventDefault();
+				var userInput = {
+					name: $('#userName').val().trim(),
+					scores: [
+						$('#question1').val().trim(),
+						$('#question2').val().trim(),
+						$('#question3').val().trim(),
+						$('#question4').val().trim(),
+						$('#question5').val().trim(),
+						$('#question6').val().trim(),
+						$('#question7').val().trim(),
+						$('#question8').val().trim(),
+						$('#question9').val().trim(),
+						$('#question10').val().trim()
+					]
+				};
+				 console.log('userInput = ' + JSON.stringify(userInput));
+
+				$.post('/api/friends', userInput)
+					.done(function (data) {
+						// console.log('response = ' + JSON.stringify(data));                  
+						$('#userMatch').html(data.matchName);
+						$('#modal1').modal('open');
+					});
+			});
+
+			
+
+				$('.modal').modal({
+					dismissible: false, // Modal can be dismissed by clicking outside of the modal
+					opacity: .5, // Opacity of modal background
+					inDuration: 300, // Transition in duration
+					outDuration: 200, // Transition out duration
+					startingTop: '4%', // Starting top style attribute
+					endingTop: '10%' // Ending top style attribute
+				});
+
+			
+
+		</script>
+
+
+<script >$(document).ready(function() {
+    $('select').material_select();
+});
+</script>
+
+
 </body>
+
 </html>
